@@ -27,3 +27,6 @@ The `php.ini` file was modified to enable database communication:
 ```ini
 extension=mysqli
 extension=pdo_mysql
+
+
+![server web](../../06-reports/screenshots/bwAPp_web_vulnerable.png
