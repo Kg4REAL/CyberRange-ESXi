@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Mon Jun  8 15:47:04 2026 as: /usr/lib/nmap/nmap --privileged -sn -oN nmap-ping-vlan20.txt 10.10.20.0/24
+Nmap scan report for 10.10.20.10
+Host is up (0.0026s latency).
+Nmap scan report for 10.10.20.50
+Host is up (0.0021s latency).
+Nmap scan report for 10.10.20.254
+Host is up (0.0020s latency).
+# Nmap done at Mon Jun  8 15:47:10 2026 -- 256 IP addresses (3 hosts up) scanned in 5.53 seconds

@@ -1,0 +1,31 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Secrets / credentials — never commit real lab creds, tokens or keys
+*.env
+credentials.txt
+*.pfx
+*.pem
+*.key
+
+# Loot / tool output that may contain sensitive hashes or dumps
+loot/
+*.ntds
+*.sam
+hashcat.potfile
+*.pot
+
+# Wordlists (too large / not part of the write-ups)
+rockyou.txt
+*.wordlist
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
