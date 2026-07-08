@@ -47,4 +47,5 @@ To maintain Active Directory domain integrity while allowing external web resolu
    * The Windows 7 workstation can utilize AD-managed DHCP scopes within `VLAN 20` for authentic client emulation.
 ![Port group ](../../06-reports/screenshots/esxi_portgroups.png)
 ![dns](../../06-reports/screenshots/dns-nslookup-validation.png)
+![dhcp](../../06-reports/screenshots/dhcp-leases-win7.png)
 
