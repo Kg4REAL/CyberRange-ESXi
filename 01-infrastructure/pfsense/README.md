@@ -51,3 +51,4 @@ The Wazuh instance does not need to initiate connections into the RedTeam networ
 
 ### 3. Active Directory Inter-VLAN Considerations
 Since the Windows Client (Win7) and Windows Server are inside the same subnet (`OPT1`), their Active Directory replication, Kerberos, and DNS traffic do not hit the firewall, maintaining local operational stability while enforcing isolation against external subnet sniffing.
+[pfsense](../../06-reports/screenshots/pfsense_dashboard.png)
