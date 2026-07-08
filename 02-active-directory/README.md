@@ -53,3 +53,5 @@ Each simulated vulnerability is designed to generate distinct, actionable events
 
 1. **AS-REP / Kerberoasting Detection**: Monitored via Windows Security Event Logs (`Event ID 4768` - A Kerberos authentication ticket was requested, and `Event ID 4769` - A Kerberos service ticket was requested). The **Wazuh Agent** streams these hashes to detect anomalous encryption downgrade requests (such as RC4/`0x17` implementations).
 2. **Identity Escalation Tracks**: Compromising `john.doe` allows full Active Directory replication dumping (`DCSync`), creating immediate alerts within the SIEM cluster through the auditing of active directory access changes.
+
+![window_server](../../06-reports/screenshots/win_srv_2k22.png)
