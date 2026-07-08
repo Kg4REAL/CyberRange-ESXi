@@ -29,4 +29,4 @@ extension=mysqli
 extension=pdo_mysql
 ```
 
-![server_web](../../06-reports/screenshots/bwAPP_web_vulnerable.png)
+![server_web](../../06-reports/screenshots/bwAPp_web_vulnerable.png)
