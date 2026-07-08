@@ -52,4 +52,4 @@ To ensure realistic simulation behavior and secure the hypervisor environment fr
 * **Infrastructure Inventory**: `esxi_vms.png` – Details allocation metrics per operating system.
 * **Network Virtual Map**: `esxi_portgroups.png` – Validates port binding and functional active VLAN tagging.
 * **Storage Allocation**: `esxi_storage.png` – Datastore metrics mapping virtual disk performance indicators.
-  ![esxi](06-reports/screenshots/esxi_monitor.png)
+  ![esxi](../06-reports/screenshots/esxi_monitor.png)
