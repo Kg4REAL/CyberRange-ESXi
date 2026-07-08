@@ -51,3 +51,5 @@ The Wazuh Manager configuration file (`/var/ossec/etc/ossec.conf` inside the Doc
     <allowed-ips>192.168.40.150</allowed-ips>
   </remote>
 </ossec_config>
+```
+![wazuh](../06-reports/screenshots/wazuh_dashboard.png)
