@@ -45,4 +45,6 @@ To maintain Active Directory domain integrity while allowing external web resolu
 2. **DHCP Services**:
    * Static assignments are prioritized for critical infrastructure components (Gateways, Domain Controllers, SIEM Managers) to prevent log routing fragmentation.
    * The Windows 7 workstation can utilize AD-managed DHCP scopes within `VLAN 20` for authentic client emulation.
-     ![Port group ](../../06-reports/screenshots/esxi_portgroups.png)
+![Port group ](../../06-reports/screenshots/esxi_portgroups.png)
+![dns](../../06-reports/screenshots/dns-nslookup-validation.png)
+
