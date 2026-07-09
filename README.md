@@ -56,7 +56,7 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 | 02 | [Kerberoasting](04-scenarios/02-ad-attacks/README.md) | Impacket GetUserSPNs, Hashcat | T1558.003 | ✅ |
 | 03 | [AS-REP Roasting](04-scenarios/03-asrep-roasting/README.md) | Impacket GetNPUsers, John the Ripper | T1558.004 | ✅ |
 | 04 | [Pass-the-Hash](04-scenarios/04-pass-the-hash/README.md) | secretsdump, NetExec, wmiexec | T1550.002 | ✅ |
-| 05 | Overpass-the-Hash (Pass-the-Key) | NTLM hash → forged Kerberos TGT | T1550.002 | 🔜 |
+| 05 | [Overpass-the-Hash](04-scenarios/05-overpass-the-hash/README.md) | Impacket getTGT, NTLM hash → forged Kerberos TGT | T1550.002 | ✅ |
 | 06 | Pass-the-Ticket | Stolen/replayed Kerberos tickets | T1550.003 | 🔜 |
 | 07 | [LLMNR/NBT-NS Poisoning & NTLM Relay](04-scenarios/07-llmnr-ntlm-relay/README.md) | Responder, ntlmrelayx | T1557.001 | 🔜 |
 | 08 | ACL Abuse (BloodHound attack paths) | GenericAll, WriteDACL, ForceChangePassword | T1222 | 🔜 |
@@ -86,7 +86,7 @@ CyberRange-ESXi/
 ├── 01-infrastructure/    # ESXi, pfSense, network diagrams
 ├── 02-active-directory/  # AD setup & config
 ├── 03-soc-wazuh/         # Wazuh installation & config
-├── 04-scenarios/         # Attack walkthroughs (01 → 07)
+├── 04-scenarios/         # Attack walkthroughs (01 → 16)
 ├── 05-detection/         # Wazuh rules, IOCs & MITRE mapping
 └── 06-reports/           # Incident-response template & screenshots
 ```
@@ -98,7 +98,7 @@ CyberRange-ESXi/
 - [x] Scenario 02 — Kerberoasting
 - [x] Scenario 03 — AS-REP Roasting
 - [x] Scenario 04 — Pass-the-Hash
-- [ ] Scenario 05 — Overpass-the-Hash
+- [x] Scenario 05 — Overpass-the-Hash
 - [ ] Scenario 06 — Pass-the-Ticket
 - [ ] Scenario 07 — LLMNR/NBT-NS Poisoning & NTLM Relay
 - [ ] Scenario 08 — ACL Abuse (BloodHound attack paths)
