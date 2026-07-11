@@ -15,7 +15,7 @@
 **🔴 Red Team**
 
 ![Kali](https://img.shields.io/badge/OS-Kali%20Linux-557C94?logo=kalilinux&logoColor=white)
-![Impacket](https://img.shields.io/badge/Toolkit-Impacket-critical)
+![Impacket](https://img.shields.io/badge/Toolkit-Impacket-8A2BE2)
 ![NetExec](https://img.shields.io/badge/Tool-NetExec%20%2F%20CME-red)
 ![BloodHound](https://img.shields.io/badge/Tool-BloodHound-black)
 ![Mimikatz](https://img.shields.io/badge/Tool-Mimikatz-orange)
@@ -23,7 +23,7 @@
 **🔵 Blue Team**
 
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh%204.x-2d6a9f?logo=wazuh&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Analysis-Wireshark-1679A7?logo=wireshark&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Analysis-Wireshark-1679A7)
 ![MITRE](https://img.shields.io/badge/Mapping-MITRE%20ATT%26CK-red)
 
 **⚙️ Infrastructure**
