@@ -2,11 +2,36 @@
 
 > Enterprise Purple Team lab built on VMware ESXi — Active Directory, pfSense VLAN segmentation, Wazuh SIEM, full Red/Blue Team scenarios with attack documentation & detection rules.
 
+![Wazuh Dashboard Preview](06-reports/screenshots/wazuh_dashboard.png)
+
 ![Platform](https://img.shields.io/badge/Platform-VMware%20ESXi-blue)
 ![pfSense](https://img.shields.io/badge/Firewall-pfSense%202.7-orange)
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh%204.x-red)
 ![AD](https://img.shields.io/badge/AD-Windows%20Server%202022-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+## Tech Stack
+
+**🔴 Red Team**
+
+![Kali](https://img.shields.io/badge/OS-Kali%20Linux-557C94?logo=kalilinux&logoColor=white)
+![Impacket](https://img.shields.io/badge/Toolkit-Impacket-critical)
+![NetExec](https://img.shields.io/badge/Tool-NetExec%20%2F%20CME-red)
+![BloodHound](https://img.shields.io/badge/Tool-BloodHound-black)
+![Mimikatz](https://img.shields.io/badge/Tool-Mimikatz-orange)
+
+**🔵 Blue Team**
+
+![Wazuh](https://img.shields.io/badge/SIEM-Wazuh%204.x-2d6a9f?logo=wazuh&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Analysis-Wireshark-1679A7?logo=wireshark&logoColor=white)
+![MITRE](https://img.shields.io/badge/Mapping-MITRE%20ATT%26CK-red)
+
+**⚙️ Infrastructure**
+
+![ESXi](https://img.shields.io/badge/Hypervisor-VMware%20ESXi-607078?logo=vmware&logoColor=white)
+![pfSense](https://img.shields.io/badge/Firewall-pfSense%202.7-212121?logo=pfsense&logoColor=white)
+![AD](https://img.shields.io/badge/AD-Windows%20Server%202022-0078D4?logo=windows&logoColor=white)
+![PowerShell](https://img.shields.io/badge/Scripting-PowerShell-5391FE?logo=powershell&logoColor=white)
 
 ## Architecture
 
@@ -57,7 +82,7 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 | 03 | [AS-REP Roasting](04-scenarios/03-asrep-roasting/README.md) | Impacket GetNPUsers, John the Ripper | T1558.004 | ✅ |
 | 04 | [Pass-the-Hash](04-scenarios/04-pass-the-hash/README.md) | secretsdump, NetExec, wmiexec | T1550.002 | ✅ |
 | 05 | [Overpass-the-Hash](04-scenarios/05-overpass-the-hash/README.md) | Impacket getTGT, NTLM hash → forged Kerberos TGT | T1550.002 | ✅ |
-| 06 | [Pass-the-Ticket](04-scenarios/06-pass-the-ticket/README.md) | Stolen/replayed Kerberos tickets | T1550.003 | ✅  |
+| 06 | [Pass-the-Ticket](04-scenarios/06-pass-the-ticket/README.md) | Stolen/replayed Kerberos tickets | T1550.003 | ✅ |
 | 07 | [LLMNR/NBT-NS Poisoning & NTLM Relay](04-scenarios/07-llmnr-ntlm-relay/README.md) | Responder, ntlmrelayx | T1557.001 | 🔜 |
 | 08 | ACL Abuse (BloodHound attack paths) | GenericAll, WriteDACL, ForceChangePassword | T1222 | 🔜 |
 | 09 | Delegation Abuse | Unconstrained / constrained Kerberos delegation | T1558 | 🔜 |
@@ -70,14 +95,6 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 | 16 | [Web Exploitation](04-scenarios/16-web-exploitation/README.md) | Nikto, SQLmap, Burp Suite | T1190 | 🔜 |
 
 Detection rules, IOCs, and the full MITRE ATT&CK mapping for every scenario live in [`05-detection/`](05-detection/).
-
-## Tools
-
-**Red Team** — Kali Linux, Nmap, Impacket, CrackMapExec, BloodHound, Responder, WinPEAS
-
-**Blue Team** — Wazuh SIEM, Wireshark
-
-**Infrastructure** — VMware ESXi, pfSense 2.7, PowerShell
 
 ## Structure
 
@@ -99,7 +116,7 @@ CyberRange-ESXi/
 - [x] Scenario 03 — AS-REP Roasting
 - [x] Scenario 04 — Pass-the-Hash
 - [x] Scenario 05 — Overpass-the-Hash
-- [X] Scenario 06 — Pass-the-Ticket
+- [x] Scenario 06 — Pass-the-Ticket
 - [ ] Scenario 07 — LLMNR/NBT-NS Poisoning & NTLM Relay
 - [ ] Scenario 08 — ACL Abuse (BloodHound attack paths)
 - [ ] Scenario 09 — Delegation Abuse
@@ -116,5 +133,5 @@ CyberRange-ESXi/
 
 **Ibrahima Dia** — Cybersecurity student | Purple Team orientation
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ibrahima--dia--cyber-blue)](https://linkedin.com/in/ibrahima-dia-cyber)
-[![GitHub](https://img.shields.io/badge/GitHub-Kg4REAL-black)](https://github.com/Kg4REAL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ibrahima--dia--cyber-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahima-dia-cyber)
+[![GitHub](https://img.shields.io/badge/GitHub-Kg4REAL-181717?logo=github&logoColor=white)](https://github.com/Kg4REAL)
