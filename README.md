@@ -77,12 +77,13 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 
 | # | Scenario | Technique | MITRE | Status |
 |---|---|---|---|---|
-| 01 | [Recon, Password Spraying & Domain Compromise](04-scenarios/01-recon/README.md) | Nmap, enum4linux, NetExec | T1046, T1110.003 | ✅ |
-| 02 | [Kerberoasting](04-scenarios/02-ad-attacks/README.md) | Impacket GetUserSPNs, Hashcat | T1558.003 | ✅ |
-| 03 | [AS-REP Roasting](04-scenarios/03-asrep-roasting/README.md) | Impacket GetNPUsers, John the Ripper | T1558.004 | ✅ |
-| 04 | [Pass-the-Hash](04-scenarios/04-pass-the-hash/README.md) | secretsdump, NetExec, wmiexec | T1550.002 | ✅ |
-| 05 | [Overpass-the-Hash](04-scenarios/05-overpass-the-hash/README.md) | Impacket getTGT, NTLM hash → forged Kerberos TGT | T1550.002 | ✅ |
-| 06 | [Pass-the-Ticket](04-scenarios/06-pass-the-ticket/README.md) | Stolen/replayed Kerberos tickets | T1550.003 | ✅ |
+| 00 | [Network Reconnaissance & Domain Enumeration](https://medium.com/@ibrahimadia759/scenario-0-network-reconnaissance-domain-enumeration-c0fa085f516c) | Nmap, enum4linux | T1046 | ✅ |
+| 01 | [Recon, Password Spraying & Domain Compromise](https://medium.com/@ibrahimadia759/senario-1-red-team-vs-blue-team-how-to-execute-a-kerberoasting-attack-and-detect-it-using-wazuh-13185ea39272) | Nmap, enum4linux, NetExec | T1046, T1110.003 | ✅ |
+| 02 | [Kerberoasting Attack & Detection](https://medium.com/@ibrahimadia759/scenario-2-cracking-and-detecting-as-rep-roasting-with-wazuh-04c2842bf7b0) | Impacket GetUserSPNs, Hashcat | T1558.003 | ✅ |
+| 03 | [AS-REP Roasting Attack & Detection](https://medium.com/@ibrahimadia759/scenario-3-lateral-movement-executing-and-detecting-pass-the-hash-pth-with-wazuh-14cadbb2ce64) | Impacket GetNPUsers, John the Ripper | T1558.004 | ✅ |
+| 04 | [Pass-the-Hash & Lateral Movement](https://medium.com/@ibrahimadia759/scenario-4-lateral-movement-executing-and-detecting-overpass-the-hash-opth-with-wazuh-6314f4b55f8a) | secretsdump, NetExec, wmiexec | T1550.002 | ✅ |
+| 05 | [Overpass-the-Hash Attack & Detection](https://medium.com/@ibrahimadia759/scenario-5-pass-the-ticket-ptt-attack-siem-detection-4c22a788ef72) | Impacket getTGT, NTLM hash → forged Kerberos TGT | T1550.002 | ✅ |
+| 06 | [Pass-the-Ticket (PtT) Attack & Detection](04-scenarios/06-pass-the-ticket/README.md) | Stolen/replayed Kerberos tickets | T1550.003 | ✅ |
 | 07 | [LLMNR/NBT-NS Poisoning & NTLM Relay](04-scenarios/07-llmnr-ntlm-relay/README.md) | Responder, ntlmrelayx | T1557.001 | 🔜 |
 | 08 | ACL Abuse (BloodHound attack paths) | GenericAll, WriteDACL, ForceChangePassword | T1222 | 🔜 |
 | 09 | Delegation Abuse | Unconstrained / constrained Kerberos delegation | T1558 | 🔜 |
@@ -95,6 +96,18 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 | 16 | [Web Exploitation](04-scenarios/16-web-exploitation/README.md) | Nikto, SQLmap, Burp Suite | T1190 | 🔜 |
 
 Detection rules, IOCs, and the full MITRE ATT&CK mapping for every scenario live in [`05-detection/`](05-detection/).
+
+## 📚 Technical Writeups on Medium
+
+Read the complete step-by-step guides and SIEM detection strategies:
+
+- **[Building a High-Performance Cyber Range with ESXi & Active Directory](https://medium.com/@ibrahimadia759/building-a-high-performance-cyber-range-with-esxi-active-directory-12afdeabee15)** — Infrastructure architecture & deployment guide
+- **[Scenario 0: Network Reconnaissance & Domain Enumeration](https://medium.com/@ibrahimadia759/scenario-0-network-reconnaissance-domain-enumeration-c0fa085f516c)** — Initial foothold techniques
+- **[Scenario 1: Red Team vs Blue Team — Kerberoasting Attack & Wazuh Detection](https://medium.com/@ibrahimadia759/senario-1-red-team-vs-blue-team-how-to-execute-a-kerberoasting-attack-and-detect-it-using-wazuh-13185ea39272)** — Complete attack-defense scenario
+- **[Scenario 2: Cracking & Detecting AS-REP Roasting with Wazuh](https://medium.com/@ibrahimadia759/scenario-2-cracking-and-detecting-as-rep-roasting-with-wazuh-04c2842bf7b0)** — Pre-authentication attacks & SIEM rules
+- **[Scenario 3: Pass-the-Hash (PtH) Attack & Lateral Movement Detection](https://medium.com/@ibrahimadia759/scenario-3-lateral-movement-executing-and-detecting-pass-the-hash-pth-with-wazuh-14cadbb2ce64)** — Credential dumping & lateral movement
+- **[Scenario 4: Overpass-the-Hash (OPtH) & Kerberos TGT Forging](https://medium.com/@ibrahimadia759/scenario-4-lateral-movement-executing-and-detecting-overpass-the-hash-opth-with-wazuh-6314f4b55f8a)** — Advanced Kerberos attacks
+- **[Scenario 5: Pass-the-Ticket (PtT) Attack & SIEM Detection](https://medium.com/@ibrahimadia759/scenario-5-pass-the-ticket-ptt-attack-siem-detection-4c22a788ef72)** — Ticket injection & Mimikatz extraction
 
 ## Structure
 
@@ -111,6 +124,7 @@ CyberRange-ESXi/
 ## Roadmap
 
 - [x] Infrastructure build-out (ESXi, pfSense, VLAN segmentation, AD, Wazuh)
+- [x] Scenario 00 — Network Reconnaissance & Domain Enumeration
 - [x] Scenario 01 — Recon, Password Spraying & Domain Compromise
 - [x] Scenario 02 — Kerberoasting
 - [x] Scenario 03 — AS-REP Roasting
@@ -131,7 +145,8 @@ CyberRange-ESXi/
 
 ## Author
 
-**Ibrahima Dia** — Cybersecurity student | Purple Team orientation
+**Ibrahima Dia** — Cybersecurity Researcher & Systems/Networks Student | Purple Team Specialist
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ibrahima--dia--cyber-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahima-dia-cyber)
 [![GitHub](https://img.shields.io/badge/GitHub-Kg4REAL-181717?logo=github&logoColor=white)](https://github.com/Kg4REAL)
+[![Medium](https://img.shields.io/badge/Medium-Ibrahima%20Dia-000000?logo=medium&logoColor=white)](https://medium.com/@ibrahimadia759)
