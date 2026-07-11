@@ -150,4 +150,4 @@ CyberRange-ESXi/
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ibrahima--dia--cyber-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahima-dia-cyber)
 [![GitHub](https://img.shields.io/badge/GitHub-Kg4REAL-181717?logo=github&logoColor=white)](https://github.com/Kg4REAL)
 [![Medium](https://img.shields.io/badge/Medium-Ibrahima%20Dia-000000?logo=medium&logoColor=white)](https://medium.com/@ibrahimadia759)
-_Last updated: <date>_
+
