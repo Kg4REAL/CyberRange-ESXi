@@ -57,7 +57,7 @@ Full Active Directory attack chain, from initial recon to domain persistence.
 | 03 | [AS-REP Roasting](04-scenarios/03-asrep-roasting/README.md) | Impacket GetNPUsers, John the Ripper | T1558.004 | ✅ |
 | 04 | [Pass-the-Hash](04-scenarios/04-pass-the-hash/README.md) | secretsdump, NetExec, wmiexec | T1550.002 | ✅ |
 | 05 | [Overpass-the-Hash](04-scenarios/05-overpass-the-hash/README.md) | Impacket getTGT, NTLM hash → forged Kerberos TGT | T1550.002 | ✅ |
-| 06 | [Pass-the-Ticket](04-scenarios/06-pass-the-ticket/README.md)Stolen/replayed Kerberos tickets | T1550.003 | ✅  |
+| 06 | [Pass-the-Ticket](04-scenarios/06-pass-the-ticket/README.md) | Stolen/replayed Kerberos tickets | T1550.003 | ✅  |
 | 07 | [LLMNR/NBT-NS Poisoning & NTLM Relay](04-scenarios/07-llmnr-ntlm-relay/README.md) | Responder, ntlmrelayx | T1557.001 | 🔜 |
 | 08 | ACL Abuse (BloodHound attack paths) | GenericAll, WriteDACL, ForceChangePassword | T1222 | 🔜 |
 | 09 | Delegation Abuse | Unconstrained / constrained Kerberos delegation | T1558 | 🔜 |
