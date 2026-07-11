@@ -99,7 +99,7 @@ CyberRange-ESXi/
 - [x] Scenario 03 — AS-REP Roasting
 - [x] Scenario 04 — Pass-the-Hash
 - [x] Scenario 05 — Overpass-the-Hash
-- [ ] Scenario 06 — Pass-the-Ticket
+- [X] Scenario 06 — Pass-the-Ticket
 - [ ] Scenario 07 — LLMNR/NBT-NS Poisoning & NTLM Relay
 - [ ] Scenario 08 — ACL Abuse (BloodHound attack paths)
 - [ ] Scenario 09 — Delegation Abuse
